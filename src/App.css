@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root {
+  margin: 0;
+  box-sizing: border-box;
+
+  --desaturated-blue: hsl(238, 29%, 16%);
+  --soft-red: hsl(14, 88%, 65%);
+  
+  --soft-violet: hsl(273, 75%, 66%);
+  --soft-blue: hsl(240, 73%, 65%);
+  
+  --gray-blue: hsl(237, 12%, 33%);
+  --dark-gray-blue: hsl(240, 6%, 50%);
+  
+  --light-gray-blue: hsl(240, 5%, 91%);
+
+  font-family: 'Kumbh Sans', sans-serif;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background-image: linear-gradient(var(--soft-violet), var(--soft-blue));
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  margin: 0;
+
+  font-size: 12px;
+
+}
+
+.App {
+  background-color: white;
+  height: 35rem;
+  width: 60rem;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  border-radius: 20px;
+
+  filter: drop-shadow(.5rem 1rem 1rem hsla(273, 67%, 31%, 0.6));
+
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  
+}
+
+.images-container {
+  width: 45%;
+  height: 100%;
+  margin: 0;
+}
+
+.base-illustration {
+  width: 100%;
+  overflow: hidden;
+  height: 100%;
+  position: relative;
+}
+
+.pattern {
+ position: absolute;
+ top: -20rem;
+ left: -36.5rem;
+
+}
+
+.woman {
+ position: absolute;
+  
+  top: 3.5rem;
+  left: -5.25rem;
+  
+}
+
+.box {
+  position: absolute;
+  top: 12rem;
+  left: -5.8rem
+}
+
+.FAQ {
+  width: 40%;
+  margin-top: 3.5rem;
+  padding-right: 5rem;
+}
+
+.FAQHeader {
+  font-size: 2rem;
+}
+
+
+.question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0;
+}
+
+.question-text {
+  color: var(--gray-blue);
+  font-size: 1rem;
+}
+
+.question-text:hover {
+  color: var(--soft-red);
+  cursor: pointer;
+}
+
+.answer {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: var(--dark-gray-blue);
+  font-size: .8rem;
+  
+}
+
+.arrow {
+  width: 10px;
+  height:  7px;
+  cursor: pointer;
+}
+
+.rule {
+  border: none;
+  height: 1px;
+  background-color: var(--light-gray-blue);
+}
+
+@media only screen and (max-width:1099px) {
+  .App {
+    flex-direction: column;
+    height: 39rem;
+    width: 22rem;
+    justify-content: center;
+  }
+  
+  .images-container {
+    width: 100%;
+    height: 25%;
+  }
+
+  .FAQ {
+    width: 100%;
+    height: 75%;
+    margin-top: -4rem;
+
+  }
+  .FAQHeader {
+    text-align: center;
+  }
+  .faq-item {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+
+
+  .base-illustration {
+    overflow: visible;
+  }
+
+  .woman {
+    position: absolute;
+    top: -8.8rem;
+    left: 3.2rem;
+    width: 240px;
+  }
+
+  .pattern {
+    position: absolute;
+    top: -1.7rem;
+    left:3.2rem;
+  }
+
+  .answer {
+    line-height: 1.25rem;
+    margin-bottom: 1.2rem;
+  }
+}
+
+
+
+
+
+

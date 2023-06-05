@@ -1,0 +1,5 @@
+export { default as box } from './illustration-box-desktop.svg'
+export { default as smallWoman } from './illustration-woman-online-mobile.svg'
+export { default as bigWoman } from './illustration-woman-online-desktop.svg'
+export { default as patternBig } from './bg-pattern-desktop.svg'
+export { default as patternSmall } from './bg-pattern-mobile.svg'
